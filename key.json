@@ -1,0 +1,14 @@
+{
+    "type": "service_account",
+    "project_id": "inteligenciamedicapruebas",
+    "private_key_id": "a730acac8a546759c07de5038cf29cb25f28ee99",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCkaRP+D7YAz/yJ\neIxwGoaUVqzSdyYv0QVJ0yRey2Gd4r0qNni1+OMx+D/2a9GoKQKDdcuTIUWTlh20\n3sQnh8jmNL9+GVjHhrtakCCxQS/17iTjY32oNYnxw85axrBSVWKOSyrMCgJu2V5R\nmPNh366i5uPzC3DkTJWZsQwaBB6WvCXykoHFbNIYCYcrh2Y1owUnz1Q2CoAUOr1u\nPq9MX/cdX0ORwj4MhKG2lvvXWWr/sxbDGXfsGAOw/o4VHV2K5M0oKGCIM1Da35H7\nb7mSfYgoHa7GVh7VGvpvPmtgGUZxcme353iT7rKBbXhVgXhG3IhFVm2vo8RTvH59\nLN6evsJJAgMBAAECggEAJ3u3qigmPpA0VuRNH7/zCW0+UEX+dPXGxhmvjpdbsFHL\nOXe+6f6lOzMh00FF5pNAsAbqNoGDRsQCitUDuPWWRNiuky8tn68mz8M0orTjunUw\nRS53tx1ybQ3nwOud3Qv14PPCyaDuwCWyDbkEXAEenK8D17Kr8BvHQpNe82GBYhPW\nbWW8LxXPPV+TV1y76zHUaLC5DcVW1iUX7geMyL+1G9PgN5ICMDPbM80bcuti4mpm\nnG/Hvr5YmntEOQePbNZowIFddasBy6UGeBaP038shYCPLjKMi0MicXeAxWSWoSsE\n+8XhTQ8XtAtOOyDxcunK2fjBpkvo2d5sA635u1Im/QKBgQDnZd8BUdVHV0Og0IN7\n8/00ZbAAqF9AZN1NpM9Yh85+7bcqFKHX45chkcvUlvreGROoCZiOKoqj4TwxbKCB\neuVAbLabwtKYcPHMbWUqOt7lCOXsZIhFkFZ8yrGxrLgthjVOVTZuck4U//UBtfoG\nQoOdUGbiTGHzUcQ8OVex1HHC5QKBgQC14/WXciPu4Yjx8yiGOnI3G/JpwpUnf5Ps\n18LbjRlBxOGmim6k/5/nLwP5HA8g9BYHTn1u8klZmdUxtUezSlduZfVuVcvjA9Qc\nYwfM3KCgF/t8/zwnZ0e8BhIm9mAd8eKCc88qkvWo4JI8XGPZ17HCnBl2hrgcDXYF\nrqDvdtLXlQKBgDnqamV3KO2BLuEKL06P49kAdovDmIuScz1iua7L1ug38TcsENHr\nGcGCL0UXQNTj6+KL/E3g4fBgiGNKb+XYb5avXwkfOvyCkFJ9Muvd7jne/0UqaF0Y\n4jy7srvoofRq+d6QP15nZ5mj8puqA1kbvrtaC1Yqjf2LgpUcORG+PXbtAoGAIgxm\nMM9hApqddA08jMPsFXzZyApwuVAcdL1+8HJdQ/6C7xYC2EgxuqkGaV9jRZvrc7qx\nqE8ag/dT/VYd8eX8r+HOK7VL0VcqIZY4I5U5TD6xCRkOPaILv5qzUy/TlkdtS1Y6\ndZHFArPnK/1vg5vo3rEx4woc9MNgUHf8EFeB6HECgYEAovXICPDHSKpTyJ144X+P\ngOqRZk56RV8BaGg/3jTdxr4FggmunyNc2c0sNs+P7TBAbH7oz1uN4D4L5JnlVd6G\nabVDQVzho98oMa/xV1wLMzJMYZB/N8ZxnxuQnhoGrjkN36N7WKvBIax5a1Hvrg02\n3uv1pjS7NbKu/Sin/RzxV38=\n-----END PRIVATE KEY-----\n",
+    "client_email": "inteligenciamedicapruebas@inteligenciamedicapruebas.iam.gserviceaccount.com",
+    "client_id": "100749622253241370381",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/inteligenciamedicapruebas%40inteligenciamedicapruebas.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
+  
