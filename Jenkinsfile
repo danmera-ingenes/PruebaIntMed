@@ -12,7 +12,7 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 // Install any necessary dependencies
-                sh 'pip install -r requirements.txt --no-warn-script-location'
+                sh 'pip install -r requirements.txt --no-warn-script-location --break-system-packages'
             }
         }
         

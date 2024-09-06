@@ -29,7 +29,7 @@ def get_file_paths():
     return args.token, args.key
 
 def app(token_file, key_file):
-    with open('/mnt/Intmed/log.log', 'a') as archivo:
+    with open('/mnt/IntMed/log.log', 'a') as archivo:
         current = str(datetime.now())    
         archivo.write(f'Inicia descarga: {current}\n')
         archivo.close()
@@ -50,15 +50,15 @@ def app(token_file, key_file):
 
     print("Inicia importación a csv...")
 
-    filepath = Path(r'/mnt/Intmed/Drive.csv')
+    filepath = Path(r'/mnt/IntMed/Drive.csv')
     df.to_csv(filepath, index=False, encoding='cp1252') 
     
-    with open('/mnt/Intmed/Drive.csv',"r", errors='ignore') as f:
+    with open('/mnt/IntMed/Drive.csv',"r", errors='ignore') as f:
         row_count = sum(1 for row in f)
         print(row_count)
         f.close()
 
-    with open('/mnt/Intmed/log.log','a') as archivo:
+    with open('/mnt/IntMed/log.log','a') as archivo:
         archivo.write(f'Termina descarga: {current}\n')
         archivo.write(f'Filas descargadas: {row_count}\n')
         archivo.close()
@@ -106,7 +106,7 @@ if __name__ == "__main__":
         token_file, key_file = get_file_paths()
         app(token_file, key_file)
     except Exception as error:
-        with open('/mnt/Intmed/log.log','a') as archivo:
+        with open('/mnt/IntMed/log.log','a') as archivo:
             current = str(datetime.now())    
             archivo.write(f'Error en descarga: {current}\n')
             archivo.write(f'Error: {repr(error)}\n')
