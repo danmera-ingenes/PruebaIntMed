@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     environment {
-        GIT_CREDENTIALS_ID = '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'
+        GIT_CREDENTIALS_ID = 'GitDan'
     }
 
     stages {
