@@ -12,14 +12,14 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 // Install any necessary dependencies
-                sh 'pip install -r requirements.txt'
+                sh 'pip install -r requirements.txt --no-warn-script-location'
             }
         }
         
         stage('Run Python Script') {
             steps {
                 // Run the Python script with the specified arguments
-                sh 'python leerDrive.py --token ./token.json --key ./key.json'
+                sh 'python3 leerDrive.py --token ./token.json --key ./key.json'
             }
         }
     }
