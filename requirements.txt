@@ -6,6 +6,3 @@ google-api-python-client
 gspread
 python-dotenv
 email-validator
-smtplib
-base64
-pathlib
