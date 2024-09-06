@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     environment {
-        GIT_CREDENTIALS_ID = 'GitDanToken'
+        GIT_CREDENTIALS_ID = 'gitdantoken'
     }
 
     stages {
