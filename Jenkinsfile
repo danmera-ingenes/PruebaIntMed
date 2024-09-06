@@ -5,7 +5,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 // Clone the public GitHub repository without credentials
-                git url: 'https://github.com/danmera-ingenes/PruebaIntMed.git'
+                git url: 'https://github.com/danmera-ingenes/PruebaIntMed.git', branch: 'main'
             }
         }
 
