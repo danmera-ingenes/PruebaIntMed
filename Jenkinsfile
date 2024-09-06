@@ -30,11 +30,8 @@ pipeline {
     
     post {
         always {
-            node {
-
-                // Archive the results or logs, if any
-                archiveArtifacts artifacts: '**/*.log', allowEmptyArchive: true
-            }
+            // Archive the results or logs, if any
+            archiveArtifacts artifacts: '**/*.log', allowEmptyArchive: true
         }
         success {
             echo 'Pipeline succeeded!'
