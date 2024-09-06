@@ -1,15 +1,11 @@
 pipeline {
     agent any
-    
-    environment {
-        GIT_CREDENTIALS_ID = 'gitdantoken'
-    }
 
     stages {
         stage('Clone Repository') {
             steps {
-                // Use Jenkins credentials to clone the GitHub repository
-                git credentialsId: "${GIT_CREDENTIALS_ID}", url: 'https://github.com/danmera-ingenes/PruebaIntMed.git'
+                // Clone the public GitHub repository without credentials
+                git url: 'https://github.com/danmera-ingenes/PruebaIntMed.git'
             }
         }
 
