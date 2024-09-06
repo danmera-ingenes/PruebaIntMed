@@ -1,11 +1,18 @@
 pipeline {
     agent any
+
+    environment {
+        GIT_CREDENTIALS_ID = 'danmera-ingenes'
+        GIT_PAT = credentials('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')
+    }
     
     stages {
-        stage('Clone Repository') {
+
+        stage('Checkout') {
             steps {
-                // Assuming your repository is hosted on GitHub
-                git 'https://github.com/danmera-ingenes/PruebaIntMed.git'
+                checkout([$class: 'GitSCM', branches: [[name: '*/main']], 
+                            userRemoteConfigs: [[url: 'https://github.com/danmera-ingenes/PruebaIntMed.git', 
+                                        credentialsId: GIT_PAT]]])
             }
         }
         
