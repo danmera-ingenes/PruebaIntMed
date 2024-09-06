@@ -1,21 +1,18 @@
 pipeline {
     agent any
-
-    environment {
-        GIT_CREDENTIALS_ID = 'danmera-ingenes'
-        GIT_PAT = credentials('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')
-    }
     
-    stages {
+    environment {
+        GIT_CREDENTIALS_ID = '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'
+    }
 
-        stage('Checkout') {
+    stages {
+        stage('Clone Repository') {
             steps {
-                checkout([$class: 'GitSCM', branches: [[name: '*/main']], 
-                            userRemoteConfigs: [[url: 'https://github.com/danmera-ingenes/PruebaIntMed.git', 
-                                        credentialsId: GIT_PAT]]])
+                // Use Jenkins credentials to clone the GitHub repository
+                git credentialsId: "${GIT_CREDENTIALS_ID}", url: 'https://github.com/danmera-ingenes/PruebaIntMed.git'
             }
         }
-        
+
         stage('Install Dependencies') {
             steps {
                 // Install any necessary dependencies
@@ -33,8 +30,11 @@ pipeline {
     
     post {
         always {
-            // Archive the results or logs, if any
-            archiveArtifacts artifacts: '**/*.log', allowEmptyArchive: true
+            node {
+
+                // Archive the results or logs, if any
+                archiveArtifacts artifacts: '**/*.log', allowEmptyArchive: true
+            }
         }
         success {
             echo 'Pipeline succeeded!'
